@@ -1,20 +1,5 @@
 # Tippy Tip - v1 - Html, CSS, and JavaScript 
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-
 ## Overview
 Tippy Tip is a single tip calculator and bill splitter then can be accessed on the web. It was made with HTML, CSS and JavaScript
 
