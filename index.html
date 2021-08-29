@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Tippy Tip</title>
+
+  <link rel="stylesheet" href="/styles/reset.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/base.css" />
+  <!-- <link rel="stylesheet" href="/styles/fontawesome/css/all.css"> -->
+  <script src="https://kit.fontawesome.com/5ebe96aa45.js" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/fce65bb03a.js"></script>
+</head>
+
+<body>
+  <h1>Tippy Tip</h1>
+  <main>
+    <section>
+      <div class="bill">
+        <h2>Bill</h2>
+        <input id="bill-amount-input" class="user-input" type="number" step='0.01' placeholder='0.00'
+        min="0.00" max="9999.99">
+        <i class="fas fa-dollar-sign"></i>
+      </div>
+
+      <div>
+        <h2>Select Tip % </h2>
+        <div class="buttons">
+          <div id="five" class="tip-button">5%</div>
+          <div id="ten" class="tip-button">10%</div>
+          <div id="fifteen" class="tip-button">15%</div>
+          <div id="twenty-five" class="tip-button">25%</div>
+          <div id="fifty" class="tip-button">50%</div>
+          <input id="custom" class="tip-button" type="number" min="0">
+        </div>
+      </div>
+
+      <div>
+        <h2> Number of People</h2>
+        <input id="number-people-input" class="user-input" type="number" value="1" min="1" max="100">
+        <i class="fas fa-user-alt"></i>
+      </div>
+    </section>
+
+    <section class="output">
+      <div>
+        <span>Tip Amount <br>/ person</span>
+        <span id="tip-amount-output" class="output-data">$0.00</span>
+
+        <span> Total <br>/ person</span>
+        <span id="per-person-output" class="output-data">$0.00</span>
+
+        <div id="reset-button" class="reset-button">Reset</div>
+
+      </div>
+    </section>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

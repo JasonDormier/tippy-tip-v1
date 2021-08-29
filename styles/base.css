@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Arvo', serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(197, 230, 228);
+}
+
+h1{
+    color:rgb(70, 73, 73);
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+main{
+    display: flex;
+    background-color: white;
+    max-width: 1400px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+section{
+    flex: 1 1 50%;
+    margin: 25px;
+}
+
+
+h2{
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+input{
+    border:2px solid rgb(28, 161, 155);
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(197, 230, 228);
+    color:rgb(18, 71, 68);
+    font-size: 1.5em;
+    text-align: right;
+}
+
+i{
+    position:relative;
+    z-index: 10;
+    bottom: 32px;
+    left: 12px;
+}
+
+.user-input{
+    width: 400px;
+}
+
+.bill{
+    margin-bottom: 20px;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.tip-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 5px;
+    flex-basis: 30%;
+    margin: 5px;
+}
+
+.buttons div{
+    background-color: rgb(18, 71, 68);
+    color:rgb(197, 230, 228);
+}
+
+.buttons div:hover{
+    cursor:pointer ;
+    background-color: rgb(28, 161, 155);
+    color: rgb(18, 71, 68);
+}
+
+.buttons input{
+    width: 0px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.output{
+    display: flex;
+    width: 364px;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    margin-left: 50px;
+    border-radius: 20px;
+    background-color: rgb(18, 71, 68);
+    color:rgb(28, 161, 155);
+}
+
+.output div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.output div span{
+    flex-basis: 50%;
+    color:rgb(197, 230, 228);
+    margin-bottom: 20px;
+}
+
+.output-data{
+    color:rgb(28, 161, 155);
+    font-size:2.5em;
+    text-align: right;
+}
+
+.reset-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-top: 50px;
+    flex-basis: 100%;
+    color: rgb(18, 71, 68);
+    height: 50px;
+    background-color: rgb(28, 161, 155);
+    border-radius: 5px;
+}
+.reset-button:hover{
+    cursor: pointer;
+    color: rgb(18, 71, 68);
+    background-color: rgb(197, 230, 228);
+}
+
+@media (max-width: 1000px){
+
+    main{
+        display: flex;
+        flex-flow: column;
+        background-color: white;
+        padding: 40px;
+        border-radius: 20px;
+    }
+    i{
+        position:relative;
+        z-index: 10;
+        bottom: 32px;
+        left: 12px;
+    }
+
+}
+@media (max-width: 550px){
+
+    h1{
+        margin-top: 50px;
+    }
+
+    .tip-button{
+        flex-basis: 45%;
+    }
+}
